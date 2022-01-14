@@ -1,0 +1,155 @@
+body, html{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+  .hero-container{
+    padding: 3rem 0;
+  }
+}
+
+.hero-txt{
+  width: 25%;
+  padding: 3rem;
+}
+
+.hero-img{
+  width: 100%;
+  border-radius: 100%;
+}
+.hero-img-container{
+  height: 500px;
+  width: 500px;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(16.5px 12.5px 18px gray);
+}
+
+/* Form */
+input{
+  height: 1.5rem;
+  width: 80%;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border: none;
+  background: #5bc0de;
+  color: #fff;
+  padding: 10px 0 10px 20px;
+  opacity: 0.9;
+}
+
+.form-header{
+  position: relative;
+}
+
+.searchIcon{
+    position: absolute;
+    top: 30%;
+    left: 77%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-btns button {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  background: #5bc0de;
+  color: #fff;
+  border: none;
+}
+
+@media screen and (max-width: 1024px){
+  .form-btns button {
+    width: 90%;
+  }
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.dog-error {
+  background: #d9534f;
+}
+.dog-success {
+  background: #5cb85c;
+}
+
+.dog-success, .dog-error {
+  width: 71%;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Dog Collection */
+.collection-wrapper h2 {
+  text-align: center;
+}
+
+.collection-container {
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 899px){
+  .collection-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .collection-container {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.dog-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dog-info-container h3{
+  margin-right: 15px;
+}
+
+.dog-img-container{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.dog-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  filter: drop-shadow(16.5px 12.5px 18px gray);
+}
+
+.trash{
+  color: #d9534f;
+}
